@@ -6,7 +6,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build-web": "tsc --jsx react",
+    "build-native": "tsc --jsx react-native",
     "test": "react-scripts test --env=node"
   },
   "dependencies": {
