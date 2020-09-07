@@ -6,7 +6,7 @@
     "preinstall": "cd ../core && yarn install",
     "postinstall": "cd ../core && yarn run build-native",
     "start": "react-native start",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --device=\"REPLACE_BY_YOUR_DEVICE\"",
     "android": "cd android && ./gradlew clean && cd .. && react-native run-android",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"

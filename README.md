@@ -1,28 +1,33 @@
 # MonoRepo React - React Native
 This repo aims to be a simple MonoRepo boilerplate with popular libraries to develop React/React Native apps. The architecture is based on [this](https://github.com/eduardomoroni/react-clean-architecture) great repo.  
 
-## Features
+## Features on Core
 - Shared logic repository with Clean architecture
-- React native 0.61
 - TypeScript 4.0
 - Redux
 - Redux-Persist
 - Redux-thunk
 - Redux-logger
 - Moment, axios
-- React-Navigation and related libraries (RN only)
-- react-native-splash-screen (RN only)
+### Native Specific features
+- React native 0.61
+- React-Navigation and related libraries
+- react-native-splash-screen
+- Integration to Redux
+### Web Specific features
+- React Router
+- react-app-rewired
+- Integration to Redux
+
 ## Running the apps
 ### Running on React Native
-run `yarn install` under native project, then `yarn run android` or `yarn run ios(todo)`
+run `yarn install` under native project, then `yarn run android` or, 
+Set your device on package.json(search for REPLACE_BY_YOUR_DEVICE) then,
+`yarn run ios`
 
 ### Running on React
 
-todo
-
-## Todo
-- [ ] Support for React web
-- [ ] Script for running on IOS by command
+run `yarn install` under web project, then `yarn run start`
 
 ## Feedback
 Everything is welcome.

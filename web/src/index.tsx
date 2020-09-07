@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './presenters/Home/App';
 import * as serviceWorker from './serviceWorker';
+import { configureStore, appConfig } from "core";
+import storage from 'redux-persist/lib/storage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    { appConfig(App, configureStore(storage)) }
   </React.StrictMode>,
   document.getElementById('root')
 );

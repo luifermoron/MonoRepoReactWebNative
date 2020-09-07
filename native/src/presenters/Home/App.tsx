@@ -34,6 +34,9 @@ import { connect } from "react-redux";
 declare const global: {HermesInternal: null | {}};
 
 const App = ({ session }) => {
+  console.log("this is just a hello world: ");
+  console.log(session);
+  
   return (
     <>
       <StatusBar barStyle="dark-content" />
